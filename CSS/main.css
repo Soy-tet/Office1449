@@ -1,0 +1,164 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=New+Rocker&family=Rowdies:wght@300&display=swap');
+body{
+    margin: auto;
+    justify-content: center;
+    overflow-x: hidden;
+    background-image: url(/IMG/c9kDGEbi-wallha.com.jpg);
+    background-size: cover;
+    background-color: black;
+    background-size: 60%;               /*    SIZE OF CAR  */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position-y: 30vh;
+    display: block;
+}
+.container_header{
+    margin: auto;
+    justify-content: center;
+    display: flex;
+    
+}
+/* HERE MY HALF IMAGE GRID WEBSITE HEADER  */
+/* .carHeader{
+    margin: auto;
+    height: 30vh;
+    width: 50vw;
+    object-fit: cove
+}
+.tulipHeader{
+    margin: auto;
+    height: 30vh;
+    width: 50vw;
+    object-fit: cover;
+} */
+
+/* 
+.carHeader{
+    margin: auto;
+    height: 100vh;
+    width: 100vw;
+    object-fit: cover;
+} */
+header{
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+.container{
+    display: flex;
+}
+.bold{
+    background-color: hotpink;
+    height: 10px;
+    width: 10px;
+    margin-top: 5px;
+    border-radius: 50%;
+    margin-left: 50px;
+    margin-right: 10px;
+}
+.userName{
+    color: aliceblue;
+    font-family: 'New Rocker', cursive;
+    font-family: 'Rowdies', cursive;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* NAVBAR ANIMATION + TEXT + HOVER + BEFORE COMMENT */
+
+.navBar{
+    color: wheat;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-right: 4vw;
+    font-size:.6vw;
+    padding-right: 2vw;
+    font-family: 'New Rocker', cursive;
+
+    position: relative;
+    text-decoration: none;
+    color: white;
+    
+}
+.navBar:hover:before {
+    transform-origin: left;
+    transform: scaleX(1);
+}
+.navBar:before {
+    content: '';
+    position: absolute;
+    width: 130%;
+    margin-left: -4px;
+    height: 1px;
+    margin-bottom: 4px;
+    border-radius: 4px;
+    background-color: #ffffff;
+    bottom: 0;
+    left: 0;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .3s ease-in-out;
+  }
+
+
+
+.avatar{
+    margin: auto;
+    height: 60px;
+    width: 60px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.container_leftBar{
+    margin: 0;
+    display: flex;
+    justify-content: right;
+}
+/* GLASS */
+.container_glass{
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+
+}
+.glass{
+
+
+    height: 250px;
+    width: 200px;
+    background-color: blue;
+    /* margin-top: 100vh; */
+
+
+
+    /* From https://css.glass */
+background: rgba(255, 255, 255, 0.21);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(10.1px);
+-webkit-backdrop-filter: blur(10.1px);
+border: 1px solid rgba(255, 255, 255, 0.46);
+
+
+text-align: center;
+}
+
+/* SNAP WEB PAGE  */
+
+section{
+    height: 100vh;
+    scroll-snap-align: center;
+}
+main{
+    scroll-snap-type: y mandatory;
+    height: 100vh;
+    
+}
+
+
+.scroll{
+    height: 20px;
+    width: 20px;
+    background-color: blue;
+}
