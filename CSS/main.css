@@ -1,18 +1,38 @@
 
+#happy{
+    display: none;
+}
   @import url('https://fonts.googleapis.com/css2?family=New+Rocker&family=Rowdies:wght@300&display=swap');
 body{
     margin: auto;
     justify-content: center;
-    overflow-x: hidden;
-    background-image: url(/IMG/c9kDGEbi-wallha.com.jpg);
-    background-size: cover;
+    /* overflow-x: hidden; */
+    margin-bottom: 0;
     background-color: black;
-    background-size: 60%;               /*    SIZE OF CAR  */
-    background-repeat: no-repeat;
-    background-position: center;
-    background-position-y: 30vh;
-    display: block;
+    /* overflow: hidden; */
+    overflow-x: hidden;
 }
+/* SUPER-CAR BACKGROUND COMMENT */
+.backimg{
+    margin-top: 20vh;
+    width: 50%;
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+    object-fit: cover;
+    z-index: 3;
+}
+.backimg001{
+    margin-top: 20vh;
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+    object-fit: cover;
+    z-index: 3;
+    margin-top: -55vh;
+}
+/* CONTAINER OF HEADER BAR COMMENT */
 .container_header{
     margin: auto;
     justify-content: center;
@@ -40,29 +60,34 @@ body{
     width: 100vw;
     object-fit: cover;
 } */
+
 header{
     margin: auto;
     display: flex;
     justify-content: space-between;
-    margin-top: 30px;
+    /* margin-top: 30px; */
+    padding-top: 20px;
+
 }
 .container{
     display: flex;
 }
 .bold{
-    background-color: hotpink;
+    /* background-color: hotpink; */
     height: 10px;
     width: 10px;
-    margin-top: 5px;
+    margin-top: -5px;
     border-radius: 50%;
     margin-left: 50px;
     margin-right: 10px;
+    transition-duration: 600ms;
+}
+.bold:hover{
+    transform: rotate(60deg);
 }
 .userName{
     color: aliceblue;
-    font-family: 'New Rocker', cursive;
-    font-family: 'Rowdies', cursive;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 /* NAVBAR ANIMATION + TEXT + HOVER + BEFORE COMMENT */
@@ -70,10 +95,10 @@ header{
 .navBar{
     color: wheat;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    margin-right: 4vw;
+    margin-right: 3vw;
     font-size:.6vw;
     padding-right: 2vw;
-    font-family: 'New Rocker', cursive;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 
     position: relative;
     text-decoration: none;
@@ -91,7 +116,7 @@ header{
     margin-left: -4px;
     height: 1px;
     margin-bottom: 4px;
-    border-radius: 4px;
+    border-radius: 3px;
     background-color: #ffffff;
     bottom: 0;
     left: 0;
@@ -115,50 +140,485 @@ header{
     justify-content: right;
 }
 /* GLASS */
+
 .container_glass{
     margin: auto;
     display: flex;
     justify-content: center;
     gap: 50px;
+    
+}
+.container_glass:hover .glass{
+    filter: blur(.7px);
+    opacity: 70%;
 
 }
+.container_glass .glass:hover{
+    filter: blur(0px);
+    opacity: 100%;
+    transform: scale(.95);
+}
 .glass{
-
-
+    color: #ffffff;
     height: 250px;
-    width: 200px;
+    margin-top: 10vh;
+    width: 170px;
     background-color: blue;
     /* margin-top: 100vh; */
 
 
 
-    /* From https://css.glass */
-background: rgba(255, 255, 255, 0.21);
+/* From https://css.glass */
+background: rgba(255, 255, 255, 0.07);
 border-radius: 16px;
 box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-backdrop-filter: blur(10.1px);
--webkit-backdrop-filter: blur(10.1px);
-border: 1px solid rgba(255, 255, 255, 0.46);
+backdrop-filter: blur(2.3px);
+-webkit-backdrop-filter: blur(2.3px);
+border: 1px solid rgba(255, 255, 255, 0.42);
 
+padding: 20px;
+font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif    ;
+cursor: pointer;
+text-align: justify;
+transition-duration: 200ms;
 
-text-align: center;
 }
+/* HEADER 2023 */
+.header2023{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-decoration: underline;
+    text-decoration-style: double;
+    padding-bottom: 10px;
+    text-align: center;
+    /* display: flex; */
+}
+
 
 /* SNAP WEB PAGE  */
 
+
+main{
+    height: 100vh;
+    scroll-snap-type: y mandatory;
+    overflow: scroll;
+    display: block;
+}
+.sectionone{
+    height: 90vh;
+}
+#sectiontwo{
+    height: 80vh;
+}
 section{
     height: 100vh;
-    scroll-snap-align: center;
-}
-main{
-    scroll-snap-type: y mandatory;
-    height: 100vh;
     
+ 
+    scroll-snap-align:center;
 }
-
+ /* SNAP SCROLL TO BOTTOM COMMENT */
 
 .scroll{
-    height: 20px;
-    width: 20px;
-    background-color: blue;
+    height: 40px;
+    width: 40px;
+    margin: auto;
+    background-color: #ffffff;
+    justify-content: center;
+    margin-top: -20px;
+    z-index: 2;
+    position: relative;
+    opacity: 0%;
+    cursor: pointer;
+}
+
+/* TEXT ANIMATION COMMENT */
+
+
+/* TAGE  */
+.tagABOUTME{
+    color: #ffffff;
+    margin: auto;
+    text-align: center;
+    position: relative;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+.portfolio2023{
+    color: #ffffff;
+    margin: auto;
+    text-align: center;
+    position: relative;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* ACADEMICS YEARS SKILL  */
+#navnav{
+	/* background-color:#ba2323; */
+	padding:10px 30px;
+	position:relative;
+	font-family: 'Open Sans', sans-serif;
+	font-size:8px;
+	text-decoration:none;
+	color:#fff;
+	border: solid 2px #831269;
+	background-image: linear-gradient(bottom, rgb(171,27,27) 0%, rgb(212,51,51) 100%);
+	border-radius: 20px;
+    margin-top: -10px;
+    cursor: pointer;
+    margin-right: 50px;
+    transition-duration: 500ms;
+    transition-delay: 100ms;
+
+}
+#navnav:hover{
+    background-color: #831269;
+}
+
+#navnav:active {
+	padding-bottom:9px;
+	padding-left:10px;
+	padding-right:10px;
+	padding-top:11px;
+	top:1px;
+	background-image: linear-gradient(bottom, rgb(171,27,27) 100%, rgb(212,51,51) 0%);
+}
+
+/* EMOJIS SMILE :) */
+span img{
+    margin: auto;
+    display: flex;
+    position: relative;
+    cursor: pointer;
+    height: 50px;
+    margin-top:-50px ;
+    margin-right: -50px;
+    width: 50px;
+    float: right;
+}
+.tagABOUTME span:hover{
+    /* color: #831269; */
+    transform: rotate(90deg););
+}
+
+
+/* //TODO:RESPONSIVE WEBSITE RUN ON MOBILE PHONE */
+
+@media screen and (max-width:500px){
+    body{
+        margin: auto;
+        justify-content: center;
+        /* overflow-x: hidden; */
+        margin-bottom: 0;
+        background-color: black;
+        /* overflow-y: visible; */
+        overflow-x: hidden;
+    }
+    /* SUPER-CAR BACKGROUND COMMENT */
+    .backimg{
+        margin-top: 20vh;
+        margin: auto;
+        width: 100%;
+        display: flex;
+        object-fit: cover;
+        justify-content: center;
+        z-index: 3;
+    }
+    .backimg001{
+        margin-top: 20vh;
+        width: 100%;
+        /* display: block; */
+        /* object-fit: cover; */
+        /* position: relative; */
+        z-index: 2;
+        margin-top: -120px;
+    }
+    /* CONTAINER OF HEADER BAR COMMENT */
+    .container_header{
+        margin: auto;
+        justify-content: center;
+        display: flex;
+        
+    }
+    /* HERE MY HALF IMAGE GRID WEBSITE HEADER  */
+    /* .carHeader{
+        margin: auto;
+        height: 30vh;
+        width: 50vw;
+        object-fit: cove
+    }
+    .tulipHeader{
+        margin: auto;
+        height: 30vh;
+        width: 50vw;
+        object-fit: cover;
+    } */
+    
+    /* 
+    .carHeader{
+        margin: auto;
+        height: 100vh;
+        width: 100vw;
+        object-fit: cover;
+    } */
+    
+    header{
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        /* margin-top: 30px; */
+        padding-top: 20px;
+    
+    }
+    .container{
+        display: flex;
+    }
+    .bold{
+        /* background-color: hotpink; */
+        height: 10px;
+        width: 10px;
+        margin-top: -5px;
+        border-radius: 50%;
+        margin-left: 50px;
+        margin-right: 10px;
+        transition-duration: 600ms;
+    }
+    .bold:hover{
+        transform: rotate(60deg);
+    }
+    .userName{
+        color: aliceblue;
+        font-family: 'New Rocker', cursive;
+        font-family: 'Rowdies', cursive;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    
+    /* NAVBAR ANIMATION + TEXT + HOVER + BEFORE COMMENT */
+    
+    .navBar{
+        color: wheat;
+        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        margin-right: 4vw;
+        font-size:.6vw;
+        padding-right: 2vw;
+        font-family: 'New Rocker', cursive;
+    
+        position: relative;
+        text-decoration: none;
+        color: white;
+        
+    }
+    .navBar:hover:before {
+        transform-origin: left;
+        transform: scaleX(1);
+    }
+    .navBar:before {
+        content: '';
+        position: absolute;
+        width: 130%;
+        margin-left: -4px;
+        height: 1px;
+        margin-bottom: 4px;
+        border-radius: 4px;
+        background-color: #ffffff;
+        bottom: 0;
+        left: 0;
+        transform-origin: right;
+        transform: scaleX(0);
+        transition: transform .3s ease-in-out;
+      }
+    
+    
+    
+    .avatar{
+        margin: auto;
+        height: 60px;
+        width: 60px;
+        object-fit: cover;
+        border-radius: 50%;
+    }
+    .container_leftBar{
+        margin: 0;
+        display: flex;
+        justify-content: right;
+    }
+    /* GLASS */
+    
+    .container_glass{
+        margin: auto;
+        display: grid;
+        gap: 10px;
+        width: 80%;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-auto-rows: 90px;
+        z-index: 5;
+        
+    }
+    .container_glass:hover .glass{
+        filter: blur(.7px);
+        opacity: 70%;
+    
+    }
+    .container_glass .glass:hover{
+        filter: blur(0px);
+        opacity: 100%;
+        transform: scale(.95);
+    }
+    .glass{
+        color: #ffffff;
+        height: 90px;
+        margin-top: 2vh;
+        width: 70px;
+        justify-self: center;
+        background-color: blue;
+        /* margin-top: 100vh; */
+    
+    
+    
+    /* From https://css.glass */
+    background: rgba(255, 255, 255, 0.07);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(2.3px);
+    -webkit-backdrop-filter: blur(2.3px);
+    border: 1px solid rgba(255, 255, 255, 0.42);
+    
+    padding: 4px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif    ;
+    cursor: pointer;
+    text-align: justify;
+    transition-duration: 200ms;
+    
+    }
+    .topic{
+        font-size: 6px;
+    }
+    /* HEADER 2023 */
+    .header2023{
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        text-decoration: underline;
+        text-decoration-style: double;
+        padding-bottom: 4px;
+        text-align: center;
+        font-size: 6px;
+        /* display: flex; */
+    }
+    
+    
+    /* SNAP WEB PAGE  */
+    
+    
+    main{
+        height: 100vh;
+        scroll-snap-type: y mandatory;
+        overflow: scroll;
+    }
+    .sectionone{
+        height: 90vh;
+    }
+    #sectiontwo{
+        height: 80vh;
+    }
+    section{
+        height: 100vh;
+        
+     
+        scroll-snap-align:center;
+    }
+     /* SNAP SCROLL TO BOTTOM COMMENT */
+    
+    .scroll{
+        height: 40px;
+        width: 40px;
+        margin: auto;
+        background-color: #ffffff;
+        justify-content: center;
+        margin-top: -20px;
+        z-index: 2;
+        position: relative;
+        opacity: 0%;
+        cursor: pointer;
+    }
+    
+    /* TEXT ANIMATION COMMENT */
+    
+    
+    /* TAGE  */
+    .tagABOUTME{
+        color: #ffffff;
+        margin: auto;
+        margin-top: 10vh;
+        text-align: center;
+        position: relative;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+    }
+    
+    .portfolio2023{
+        color: #ffffff;
+        margin: auto;
+        text-align: center;
+        position: relative;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    
+    /* ACADEMICS YEARS SKILL  */
+    #navnav{
+        /* background-color:#ba2323; */
+        padding:10px;
+        position:relative;
+        font-family: 'Open Sans', sans-serif;
+        font-size:8px;
+        text-decoration:none;
+        color:#fff;
+        border: solid 2px #831269;
+        background-image: linear-gradient(bottom, rgb(171,27,27) 0%, rgb(212,51,51) 100%);
+        border-radius: 20px;
+        margin-top: -10px;
+        cursor: pointer;
+        margin-right: 50px;
+        transition-duration: 500ms;
+        transition-delay: 100ms;
+    
+    }
+    #navnav:hover{
+        background-color: #831269;
+    }
+    
+    #navnav:active {
+        padding-bottom:9px;
+        padding-left:10px;
+        padding-right:10px;
+        padding-top:11px;
+        top:1px;
+        background-image: linear-gradient(bottom, rgb(171,27,27) 100%, rgb(212,51,51) 0%);
+    }
+    
+    /* EMOJIS SMILE :) */
+    span img{
+        margin: auto;
+        display: flex;
+        position: relative;
+        cursor: pointer;
+        height: 20px;
+        margin-top:-12px ;
+        margin-right: -12px;
+        width: 20px;
+        float: right;
+    }
+    .tagABOUTME span:hover{
+        /* color: #831269; */
+        transform: rotate(90deg););
+    }
+
+
+
+
+    /* NEW */
+.container_mobileResponsive{
+    display: block;
+}
+.container_userName{
+    display: flex;
+}
+
 }

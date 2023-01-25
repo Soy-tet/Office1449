@@ -1,19 +1,11 @@
-// window.onscroll = function  (){
-//     // var y = window.pageYOffset;
-//     var x = document.getElementById("header ")
-//     if(window.pageYOffset>header.offsetHeight){
-//         x.style.position="fixed";
-//         x.style.top="0";
-//     }
-// }
 
-window.onscroll = function(){
-    var x = document.getElementById("scroll ")
-    if(window.pageYOffset>scroll.offsetHeight){
-        x.scroll.offsetHeight="100vh";
-        x.style.top="0";
+
+
+function sting (){
+    var x = window.screen.availWidth;
+    if(x<=500){
+        var u = document.getElementById('happy');
+        u.setAttribute("style","display","block");
     }
 }
-function scroll (){
-    window.onscroll
-}
+window.screen.availHeight=sting()
