@@ -1,7 +1,4 @@
 
-#happy{
-    display: none;
-}
   @import url('https://fonts.googleapis.com/css2?family=New+Rocker&family=Rowdies:wght@300&display=swap');
 body{
     margin: auto;
@@ -39,28 +36,6 @@ body{
     display: flex;
     
 }
-/* HERE MY HALF IMAGE GRID WEBSITE HEADER  */
-/* .carHeader{
-    margin: auto;
-    height: 30vh;
-    width: 50vw;
-    object-fit: cove
-}
-.tulipHeader{
-    margin: auto;
-    height: 30vh;
-    width: 50vw;
-    object-fit: cover;
-} */
-
-/* 
-.carHeader{
-    margin: auto;
-    height: 100vh;
-    width: 100vw;
-    object-fit: cover;
-} */
-
 header{
     margin: auto;
     display: flex;
@@ -73,7 +48,6 @@ header{
     display: flex;
 }
 .bold{
-    /* background-color: hotpink; */
     height: 10px;
     width: 10px;
     margin-top: -5px;
@@ -297,7 +271,7 @@ span img{
 }
 .tagABOUTME span:hover{
     /* color: #831269; */
-    transform: rotate(90deg););
+    transform: rotate(90deg);
 }
 
 
@@ -339,38 +313,18 @@ span img{
         display: flex;
         
     }
-    /* HERE MY HALF IMAGE GRID WEBSITE HEADER  */
-    /* .carHeader{
-        margin: auto;
-        height: 30vh;
-        width: 50vw;
-        object-fit: cove
-    }
-    .tulipHeader{
-        margin: auto;
-        height: 30vh;
-        width: 50vw;
-        object-fit: cover;
-    } */
-    
-    /* 
-    .carHeader{
-        margin: auto;
-        height: 100vh;
-        width: 100vw;
-        object-fit: cover;
-    } */
-    
     header{
         margin: auto;
-        display: flex;
-        justify-content: space-between;
+        display: block;
+        /* justify-content: space-between; */
         /* margin-top: 30px; */
         padding-top: 20px;
     
     }
     .container{
         display: flex;
+        position: relative;
+        justify-content: center;
     }
     .bold{
         /* background-color: hotpink; */
@@ -378,8 +332,7 @@ span img{
         width: 10px;
         margin-top: -5px;
         border-radius: 50%;
-        margin-left: 50px;
-        margin-right: 10px;
+        /* margin-right: 10px; */
         transition-duration: 600ms;
     }
     .bold:hover{
@@ -393,40 +346,77 @@ span img{
     }
     
     /* NAVBAR ANIMATION + TEXT + HOVER + BEFORE COMMENT */
-    
+    /* //TODO: NAV BAR  */
     .navBar{
-        color: wheat;
-        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-        margin-right: 4vw;
-        font-size:.6vw;
-        padding-right: 2vw;
-        font-family: 'New Rocker', cursive;
+        /* background-color:#ba2323; */
+        padding:8px;
+        position:relative;
+        font-family: 'Open Sans', sans-serif;
+        font-size:7px;
+        text-align: center;
+        text-decoration:none;
+        width: 10vw;
+        height: 8px;
+        color:#fff;
+        border: solid 2px #831269;
+        background-image: linear-gradient(bottom, rgb(171,27,27) 0%, rgb(212,51,51) 100%);
+        border-radius: 20px;
+        margin-top: -10px;
+        cursor: pointer;
+        margin-right: 0px;
+        transition-duration: 500ms;
+        transition-delay: 100ms;
     
-        position: relative;
-        text-decoration: none;
-        color: white;
-        
     }
-    .navBar:hover:before {
-        transform-origin: left;
-        transform: scaleX(1);
+    .navBar::before{
+        display: none;
     }
-    .navBar:before {
-        content: '';
-        position: absolute;
-        width: 130%;
-        margin-left: -4px;
-        height: 1px;
-        margin-bottom: 4px;
-        border-radius: 4px;
-        background-color: #ffffff;
-        bottom: 0;
-        left: 0;
-        transform-origin: right;
-        transform: scaleX(0);
-        transition: transform .3s ease-in-out;
-      }
+    .navBar:hover{
+        background-color: #831269;
+    }
     
+    .navBar:active {
+        padding-bottom:9px;
+        padding-left:10px;
+        padding-right:10px;
+        padding-top:11px;
+        top:1px;
+        background-image: linear-gradient(bottom, rgb(171,27,27) 100%, rgb(212,51,51) 0%);
+    }
+    /* //TODO: ACADEMICS YEARS SKILL  */
+    /* ACADEMICS YEARS SKILL  */
+    #navnav{
+        padding:8px;
+        position:relative;
+        font-family: 'Open Sans', sans-serif;
+        font-size:7px;
+        text-align: center;
+        text-decoration:none;
+        width: 10vw;
+        height: 8px;
+        color:#fff;
+        border: solid 2px #831269;
+        background-image: linear-gradient(bottom, rgb(171,27,27) 0%, rgb(212,51,51) 100%);
+        border-radius: 20px;
+        margin-top: -10px;
+        cursor: pointer;
+        margin-right: 0px;
+        transition-duration: 500ms;
+        transition-delay: 100ms;
+    
+    }
+    #navnav:hover{
+        background-color: #831269;
+    }
+    
+    #navnav:active {
+        padding-bottom:9px;
+        padding-left:10px;
+        padding-right:10px;
+        padding-top:11px;
+        top:1px;
+        background-image: linear-gradient(bottom, rgb(171,27,27) 100%, rgb(212,51,51) 0%);
+    }
     
     
     .avatar{
@@ -437,9 +427,9 @@ span img{
         border-radius: 50%;
     }
     .container_leftBar{
-        margin: 0;
+        margin-top: 3vh;
         display: flex;
-        justify-content: right;
+        justify-content: center;
     }
     /* GLASS */
     
@@ -509,17 +499,17 @@ span img{
     
     main{
         height: 100vh;
-        scroll-snap-type: y mandatory;
+        scroll-snap-type:none;
         overflow: scroll;
     }
     .sectionone{
-        height: 90vh;
+        height: 25vh;
     }
     #sectiontwo{
-        height: 80vh;
+        height: 20vh;
     }
     section{
-        height: 100vh;
+        height: 70vh;
         
      
         scroll-snap-align:center;
@@ -561,37 +551,7 @@ span img{
         font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     }
     
-    /* ACADEMICS YEARS SKILL  */
-    #navnav{
-        /* background-color:#ba2323; */
-        padding:10px;
-        position:relative;
-        font-family: 'Open Sans', sans-serif;
-        font-size:8px;
-        text-decoration:none;
-        color:#fff;
-        border: solid 2px #831269;
-        background-image: linear-gradient(bottom, rgb(171,27,27) 0%, rgb(212,51,51) 100%);
-        border-radius: 20px;
-        margin-top: -10px;
-        cursor: pointer;
-        margin-right: 50px;
-        transition-duration: 500ms;
-        transition-delay: 100ms;
     
-    }
-    #navnav:hover{
-        background-color: #831269;
-    }
-    
-    #navnav:active {
-        padding-bottom:9px;
-        padding-left:10px;
-        padding-right:10px;
-        padding-top:11px;
-        top:1px;
-        background-image: linear-gradient(bottom, rgb(171,27,27) 100%, rgb(212,51,51) 0%);
-    }
     
     /* EMOJIS SMILE :) */
     span img{
@@ -607,18 +567,6 @@ span img{
     }
     .tagABOUTME span:hover{
         /* color: #831269; */
-        transform: rotate(90deg););
+        transform: rotate(90deg);
     }
-
-
-
-
-    /* NEW */
-.container_mobileResponsive{
-    display: block;
-}
-.container_userName{
-    display: flex;
-}
-
 }
