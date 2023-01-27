@@ -63,7 +63,47 @@ header{
     color: aliceblue;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
-
+/* //TODO:CONTAINER CONTECT ICON FOR CLIENT */
+.container_contact{
+    height: 20vh;
+    margin-top: -35vh;
+    margin-left: 30px;
+    width: 20px;
+    display: block;
+    z-index: 5;
+    position: relative;
+    float: left;
+    text-align: center;
+}
+.container_contact01{
+    height: 20vh;
+    margin-top: -35vh;
+    margin-right: 30px;
+    width: 20px;
+    display: block;
+    z-index: 6;
+    position: relative;
+    float: right;
+    text-align: center;
+    justify-content: center;
+    /* background-color: #831269; */
+}
+.container_contact i{
+    margin-bottom: 10px;
+    color: white;
+    font-size: 10px;
+}
+.container_contact01 i{
+    margin-bottom: 10px;
+    color: white;
+    font-size: 10px;
+}
+#stack{
+    margin-bottom: 10px;
+    color: orange;
+    font-size: 14px;
+    margin-left: 1px;
+}
 /* NAVBAR ANIMATION + TEXT + HOVER + BEFORE COMMENT */
 
 .navBar{
@@ -187,7 +227,7 @@ section{
     height: 100vh;
     
  
-    scroll-snap-align:center;
+    scroll-snap-align:start;
 }
  /* SNAP SCROLL TO BOTTOM COMMENT */
 
@@ -273,7 +313,174 @@ span img{
     /* color: #831269; */
     transform: rotate(90deg);
 }
+/* SUPER TOP SKILL THESE I HAVE */
+.container_topskill{
+    /* background-color: white; */
+    height: 30vh;
+    width: 100vw;
+    margin-top: 20vh;
+    display: block;
+    padding-top: 5vh;
+}
+.container_project_info{
+    margin: auto;
+    display: block;
+    text-align: center;
+    justify-content: center;
+    width: 50vw;
+    /* text-align: justify; */
+}
+.project_title{
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    text-decoration: double;
+    font-size: x-large;
+    color: orange;
+    margin-bottom: 15px;
+}
+.project-text{
+    color: white;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: small;
+}
+.unit_top{
+    justify-content: center;
+    width: 70vw;
+    display: grid;
+    display: flex;
+    gap: 200px;
+    margin: auto;
+    margin-top: 30px;
+}
+.top1{
+    color: white;
+    border-radius: 100px;
+    border-color: #831269;
+    border-width: 1px;
+    width: 150px;
+    text-align: center;
+    border: 5px;
+    padding: 5px;
+    border: solid 2px #831269;
+    padding-top: 10px;
+    background-color: rgb(8, 5, 49);
+    transition: 800ms;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: small;
+}
+.top1:hover{
+    background-color: #ba1753;
+    color: orange;
+}
+/* //TODO: STORE PROJECTS IMAGE  */
+.line-through{
+    width: 80vw;
+    justify-content: center;
+    margin: auto;
+    height: 1px;
+    margin-top: 30px;
+    background-color: #0092cc;
+}
+.container_projects{
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 80vw;
+    padding: 20px;
+    padding-right: 0px;
+    border-radius: 20px;
+    justify-content: center;
+    /* display: flex; */
+    gap: 30px;
+    margin-top: 20px;
+    /* background-color: #0092cc; */
+}
+.container_projects img{
+    height: 15vw;
+    width: 23vw;
+    border-radius: 20px;
+}
+.icon_project01{
+    height: 15vw;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size:100px ;
+    color: rgb(91, 45, 219);
+    margin: auto;
+    /* text-align: center; */
+    width: 23vw;
+    text-align: center;
+    border-radius: 20px;
+    /* From https://css.glass */
+background: rgba(255, 255, 255, 0.23);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(1.4px);
+-webkit-backdrop-filter: blur(1.4px);
+border: 1px solid rgba(255, 255, 255, 0.59);
+}
 
+
+
+
+
+.card {
+    width: 190px;
+    height: 90px;
+    background: #ffff;
+    box-shadow: 0 1px 25px rgba(0,0,0,0.2);
+    position: relative;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    padding: 12px 10px;
+    border-radius: 10px;
+  }
+  
+  .card_load {
+    width: 70px;
+    height: 70px;
+    position: relative;
+    float: left;
+    background: linear-gradient(120deg, #e5e5e5 30%, #f0f0f0 38%, #f0f0f0 
+    40%, #e5e5e5 48%);
+    border-radius: 50%;
+    background-size: 200% 100%;
+    background-position: 100% 0;
+    animation: load89234 2s infinite;
+  }
+  
+  .card_load_extreme_title {
+    width: 90px;
+    height: 10px;
+    position: relative;
+    float: right;
+    border-radius: 5px;
+    background: linear-gradient(120deg, #e5e5e5 30%, #f0f0f0 38%, #f0f0f0 
+    40%, #e5e5e5 48%);
+    background-size: 200% 100%;
+    background-position: 100% 0;
+    animation: load89234 2s infinite;
+  }
+  
+  .card_load_extreme_descripion {
+    width: 90px;
+    height: 47px;
+    position: relative;
+    float: right;
+    border-radius: 5px;
+    background: linear-gradient(120deg, #e5e5e5 30%, #f0f0f0 38%, #f0f0f0 
+    40%, #e5e5e5 48%);
+    margin-top: 10px;
+    background-size: 200% 100%;
+    background-position: 100% 0;
+    animation: load89234 2s infinite;
+  }
+  
+  @keyframes load89234 {
+    100% {
+      background-position: -100% 0;
+    }
+  }
 
 /* //TODO:RESPONSIVE WEBSITE RUN ON MOBILE PHONE */
 
@@ -325,6 +532,7 @@ span img{
         display: flex;
         position: relative;
         justify-content: center;
+        margin-right: 10vw;
     }
     .bold{
         /* background-color: hotpink; */
@@ -405,6 +613,48 @@ span img{
         transition-delay: 100ms;
     
     }
+    /* //TODO:CONTAINER CONTECT ICON FOR CLIENT */
+.container_contact{
+    height: 20vh;
+    margin-top: -24vh;
+    margin-left: 10px;
+    width: 20px;
+    display: grid;
+    z-index: 5;
+    position: relative;
+    float: left;
+    text-align: center;
+}
+.container_contact01{
+    height: 20vh;
+    margin-top: -24vh;
+    margin-right: 10px;
+    width: 20px;
+    display: grid;
+    z-index: 6;
+    position: relative;
+    float: right;
+    text-align: center;
+    justify-content: center;
+    /* background-color: #831269; */
+}
+.container_contact i{
+    margin-bottom: 5px;
+    color: white;
+    font-size: 7px;
+}
+.container_contact01 i{
+    margin-bottom: 5px;
+    color: white;
+    font-size: 7px;
+}
+#stack{
+    margin-bottom: 10px;
+    color: orange;
+    font-size: 12px;
+    margin-left: 1px;
+}
+/* //TODO:HOVER NAVNAV BACKGROUND IMAGE */
     #navnav:hover{
         background-color: #831269;
     }
@@ -431,14 +681,15 @@ span img{
         display: flex;
         justify-content: center;
     }
-    /* GLASS */
+    /* //TODO: GLASS CARD  */
     
     .container_glass{
         margin: auto;
         display: grid;
-        gap: 10px;
+        gap: 20px;
+        row-gap: 80px;
         width: 80%;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
         grid-auto-rows: 90px;
         z-index: 5;
         
@@ -455,9 +706,9 @@ span img{
     }
     .glass{
         color: #ffffff;
-        height: 90px;
-        margin-top: 2vh;
-        width: 70px;
+        height: 130px;
+        margin-top: 7vh;
+        width: 120px;
         justify-self: center;
         background-color: blue;
         /* margin-top: 100vh; */
@@ -480,7 +731,7 @@ span img{
     
     }
     .topic{
-        font-size: 6px;
+        font-size: 10px;
     }
     /* HEADER 2023 */
     .header2023{
@@ -548,6 +799,7 @@ span img{
         margin: auto;
         text-align: center;
         position: relative;
+        display: none;
         font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     }
     
@@ -569,4 +821,113 @@ span img{
         /* color: #831269; */
         transform: rotate(90deg);
     }
+
+/* SUPER TOP SKILL THESE I HAVE */
+.container_topskill{
+    /* background-color: white; */
+    height: 30vh;
+    width: 100vw;
+    margin-top: 20vh;
+    display: block;
+    padding-top: 10vh;
+}
+.container_project_info{
+    margin: auto;
+    display: block;
+    text-align: center;
+    justify-content: center;
+    width: 80vw;
+    /* text-align: justify; */
+}
+.project_title{
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    text-decoration: double;
+    font-size: x-large;
+    color: orange;
+    margin-bottom: 15px;
+}
+.project-text{
+    color: white;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 10px;
+}
+.unit_top{
+    justify-content: center;
+    width: 70vw;
+    display: grid;
+    display: flex;
+    gap: 10px;
+    margin: auto;
+    margin-top: 30px;
+}
+.top1{
+    color: white;
+    border-radius: 100px;
+    border-color: #831269;
+    border-width: 1px;
+    width: 150px;
+    text-align: center;
+    border: 5px;
+    padding: 3px;
+    border: solid 1px #831269;
+    padding-top: 5px;
+    background-color: rgb(8, 5, 49);
+    transition: 800ms;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size:10px;
+}
+.top1:hover{
+    background-color: #ba1753;
+    color: orange;
+}
+/* //TODO: STORE PROJECTS IMAGE  */
+.line-through{
+    width: 80vw;
+    justify-content: center;
+    margin: auto;
+    height: 1px;
+    margin-top: 30px;
+    background-color: #0092cc;
+}
+.container_projects{
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 80vw;
+    padding: 20px;
+    /* padding-right: 0px; */
+    border-radius: 20px;
+    justify-content: center;
+    /* display: flex; */
+    gap: 30px;
+    margin-top: 20px;
+    /* background-color: #0092cc; */
+}
+.container_projects img{
+    height: 30vw;
+    width: 40vw;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.icon_project01{
+    height: 30vw;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size:67px ;
+    color: rgb(114, 114, 114);
+    margin: auto;
+    /* text-align: center; */
+    width: 40vw;
+    text-align: center;
+    border-radius: 10px;
+
+position: relative;
+float: left;
+background: linear-gradient(120deg, #e5e5e5 30%, #f0f0f0 38%, #f0f0f0 
+40%, #e5e5e5 48%);
+background-size: 200% 100%;
+background-position: 100% 0;
+animation: load89234 2s infinite;
+/* background: white; */
+}
 }
