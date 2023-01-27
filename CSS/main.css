@@ -113,23 +113,23 @@ header{
     font-size:.6vw;
     padding-right: 2vw;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-
     position: relative;
     text-decoration: none;
     color: white;
+    /* background-color: #0092cc; */
     
 }
-.navBar:hover:before {
+a .navBar:hover:before {
     transform-origin: left;
     transform: scaleX(1);
 }
-.navBar:before {
+a .navBar:before {
     content: '';
     position: absolute;
     width: 130%;
     margin-left: -4px;
     height: 1px;
-    margin-bottom: 4px;
+    margin-bottom: -7px;
     border-radius: 3px;
     background-color: #ffffff;
     bottom: 0;

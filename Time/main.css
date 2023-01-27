@@ -1,0 +1,125 @@
+.container_timer{
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    margin: auto;
+    width: 80%;
+    /* margin-top: 20vh; */
+}
+.hour{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: orange;
+    font-size: 5vh;
+    z-index: 6;
+}
+.address_time{
+    display: flex;
+    /* margin: auto; */
+}
+.nametime{
+    color: aliceblue;
+    font-size: 5vh;
+    z-index: 6;
+    margin-left: 10px;
+    /* margin-right: 5px; */
+}
+.minute{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: orange;
+    font-size: 5vh;
+    z-index: 6;
+}
+.second{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: orange;
+    font-size: 5vh;
+    z-index: 6;
+}
+.day{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: orange;
+    font-size: 5vh;
+    z-index: 6;
+}
+.year{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: orange;
+    font-size: 5vh;
+    z-index: 6;
+}
+.century{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: orange;
+    font-size: 5vh;
+    z-index: 6;
+}
+.Millisecond{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: orange;
+    font-size: 5vh;
+    z-index: 6;
+}
+@media screen and (max-width:500px){
+    .container_timer{
+        display: flex;
+        text-align: center;
+        justify-content: space-between;
+        margin: auto;
+        width: 80%;
+        margin-top: 6.5vh;
+    }
+    .hour{
+
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        color: orange;
+        font-size:10px;
+        z-index: 6;
+    }
+    .address_time{
+        display: flex;
+        /* margin: auto; */
+    }
+    .nametime{
+        color: aliceblue;
+        font-size:10px;
+        z-index: 6;
+        margin-left: 10px;
+        /* margin-right: 5px; */
+    }
+    .minute{
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        color: orange;
+        font-size:10px;
+        z-index: 6;
+    }
+    .second{
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        color: orange;
+        font-size:10px;
+        z-index: 6;
+    }
+    .day{
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        color: orange;
+        font-size:10px;
+        z-index: 6;
+    }
+    .year{
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        color: orange;
+        font-size:10px;
+        z-index: 6;
+    }
+    .century{
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        color: orange;
+        font-size:10px;
+        z-index: 6;
+    }
+    .Millisecond{
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        color: orange;
+        font-size:10px;
+        z-index: 6;
+    }
+}
