@@ -571,7 +571,7 @@ border: 1px solid rgba(255, 255, 255, 0.59);
         border-radius: 20px;
         margin-top: -10px;
         cursor: pointer;
-        margin-right: 0px;
+        margin-right: 5px;
         transition-duration: 500ms;
         transition-delay: 100ms;
     
@@ -695,19 +695,21 @@ border: 1px solid rgba(255, 255, 255, 0.59);
         
     }
     .container_glass:hover .glass{
-        filter: blur(.7px);
-        opacity: 70%;
+        filter: blur(0px);
+        opacity: 100%;
+        /* display:none; */
     
     }
     .container_glass .glass:hover{
         filter: blur(0px);
         opacity: 100%;
-        transform: scale(.95);
+        transform: scale(1);
+        /* display: none; */
     }
     .glass{
         color: #ffffff;
         height: 130px;
-        margin-top: 7vh;
+        margin-top: 10vh;
         width: 120px;
         justify-self: center;
         background-color: blue;
@@ -727,7 +729,7 @@ border: 1px solid rgba(255, 255, 255, 0.59);
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif    ;
     cursor: pointer;
     text-align: justify;
-    transition-duration: 200ms;
+    transition-duration: 0ms;
     
     }
     .topic{
@@ -754,10 +756,10 @@ border: 1px solid rgba(255, 255, 255, 0.59);
         overflow: scroll;
     }
     .sectionone{
-        height: 25vh;
+        height: 30vh;
     }
     #sectiontwo{
-        height: 20vh;
+        height: 30vh;
     }
     section{
         height: 70vh;
